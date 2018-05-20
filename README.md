@@ -9,12 +9,31 @@ Focusing on high performance with easy usage.
 Check out our [Demo](http://www.angular-cesium.com) that contains small app built with angular-cesium.
 
 ## Getting started
+
+### Adding to existing Angular application
 + install `angular-cesium`:
   ```bash
   $ npm install --save angular-cesium
   ```
+  
++ Import and add `AngularCesiumModule` to your app root module:
+  ```javascript
+  import { AngularCesiumModule } from 'angular-cesium';
+  // ....
+  @NgModule({
+  	declarations: [],
+  	imports: [
+  		// ...
+    		AngularCesiumModule.forRoot()
+    	],
+    	bootstrap: [AppComponent]
+  })
+  export class AppModule {
+  }
+  ```
 
-#### Angular cli
+
+### New project with Angular cli
 + If you didn't installed [Angular CLI](https://github.com/angular/angular-cli) yet:
     ```bash
     $ npm install -g @angular/cli
