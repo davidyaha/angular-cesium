@@ -44,6 +44,12 @@ Check out our [Demo](http://www.angular-cesium.com) that contains small app buil
     $ ng new PROJECT_NAME
     $ cd PROJECT_NAME
     ```
+
++ install `angular-cesium`:
+  ```bash
+  $ npm install --save angular-cesium
+  ```
+
 + Import and add `AngularCesiumModule` to your app root module:
     ```javascript
     import { AngularCesiumModule } from 'angular-cesium';
